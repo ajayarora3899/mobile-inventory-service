@@ -14,17 +14,15 @@ public class Mobile {
     @Column(name = "mobile_name")
     private String mobileName;
 
-    @Column(name = "variant")
-    private String variant;
-
-    @Column(name = "price")
-    private Integer price;
-
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "brand_id")
     private Brand brand;
 
     public Mobile() {
+    }
+
+    public Mobile(Integer mobileId) {
+        this.mobileId = mobileId;
     }
 
     public Integer getMobileId() {
@@ -41,22 +39,6 @@ public class Mobile {
 
     public void setMobileName(String mobileName) {
         this.mobileName = mobileName;
-    }
-
-    public String getVariant() {
-        return variant;
-    }
-
-    public void setVariant(String variant) {
-        this.variant = variant;
-    }
-
-    public Integer getPrice() {
-        return price;
-    }
-
-    public void setPrice(Integer price) {
-        this.price = price;
     }
 
     public Brand getBrand() {

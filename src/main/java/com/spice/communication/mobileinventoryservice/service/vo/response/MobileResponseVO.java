@@ -13,12 +13,6 @@ public class MobileResponseVO {
     @JsonProperty(value = "mname")
     private String mobName;
 
-    @NotNull(message = "Price Required")
-    private Integer price;
-
-    @NotNull(message = "Variant Name Required")
-    private String variant;
-
     @NotNull(message = "BrandId Name Required")
     private Integer brandId;
 
@@ -39,22 +33,6 @@ public class MobileResponseVO {
 
     public void setMobName(String mobName) {
         this.mobName = mobName;
-    }
-
-    public Integer getPrice() {
-        return price;
-    }
-
-    public void setPrice(Integer price) {
-        this.price = price;
-    }
-
-    public String getVariant() {
-        return variant;
-    }
-
-    public void setVariant(String variant) {
-        this.variant = variant;
     }
 
     public Integer getBrandId() {

@@ -1,5 +1,6 @@
 package com.spice.communication.mobileinventoryservice.service.impl;
 
+import com.spice.communication.mobileinventoryservice.common.MobileInventoryObjectMapper;
 import com.spice.communication.mobileinventoryservice.dao.BrandDao;
 import com.spice.communication.mobileinventoryservice.dao.model.Brand;
 import com.spice.communication.mobileinventoryservice.service.BrandService;
